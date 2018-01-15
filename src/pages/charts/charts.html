@@ -1,0 +1,106 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Data Analysis</ion-title>
+  </ion-navbar>
+ </ion-header>
+ 
+ <ion-content>
+ 
+          <ion-input type="tel"   [(ngModel)]='data1' placeholder="Jaipur" input="getBarChart()"></ion-input>
+         
+            
+      
+           <ion-input type="tel"   [(ngModel)]='data2' placeholder="Delhi" ></ion-input>
+       
+          <ion-input type="tel"   [(ngModel)]='data3' placeholder="Kota"></ion-input>
+      
+          <ion-input type="tel"   [(ngModel)]='data4' placeholder="Ajmer"></ion-input>
+        
+            
+      
+            
+              <ion-input type="tel"   [(ngModel)]='data5' placeholder="Alwar"></ion-input>
+           
+                
+       
+            
+              <ion-input type="tel"   [(ngModel)]='data6' placeholder="Udaipur"></ion-input>
+             
+                
+        
+              <ion-input type="tel"   [(ngModel)]='data7' placeholder="Mumbai"></ion-input>
+              
+                
+      
+      
+        
+
+       
+  <ion-card>
+    <ion-card-header>
+      Bar Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #barCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Doughnut Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #doughnutCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Line Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #lineCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Radar Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #radarCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Polar Area Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #polarCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Pie Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #pieCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Bubble Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #bubbleCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-header>
+      Mixed Chart
+    </ion-card-header>
+    <ion-card-content>
+      <canvas #mixedCanvas></canvas>
+    </ion-card-content>
+  </ion-card>
+ </ion-content>
